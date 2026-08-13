@@ -29,13 +29,6 @@
 
 - [Insurance-Churn-Analysis](https://github.com/kjj403/Insurance-Churn-Analysis)
 
-### AI meal recommendation service
-
-사용자 조건과 선호를 반영하는 LLM 추천 서비스로, 외부 API를 서버리스 함수 뒤에 분리해 배포했습니다.
-
-- [Live Demo](https://pick-my-lunch.vercel.app)
-- [Repository](https://github.com/kjj403/Pick-My-Lunch)
-
 ## Research
 
 - First author, covariance regression for KOSPI volatility: [CSAM 32(5), 655-672](https://doi.org/10.29220/CSAM.2025.32.5.655)

@@ -17,6 +17,12 @@
 
 - [nice-industry-code-ai-agent-demo](https://github.com/kjj403/nice-industry-code-ai-agent-demo)
 
+### Public filing industry Agent
+
+합성 공시 문서에서 사업 활동을 분리하고, 복수 산업코드 후보와 문장 근거를 제시한 뒤 사람의 검토 결과를 구조화하는 설명 가능한 문서 AI 데모입니다.
+
+- [public-filing-industry-agent-demo](https://github.com/kjj403/public-filing-industry-agent-demo)
+
 ### Lending portfolio optimization
 
 대출 데이터의 비대칭 손실을 반영한 비용 민감 학습과 위험 조정 수익률 평가를 결합했습니다.

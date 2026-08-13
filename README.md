@@ -11,6 +11,12 @@
 
 ## Selected Work
 
+### Industry code classification AI Agent
+
+합성 데이터를 사용해 관리자 배정, 작업자 AI 후보 분류, 검수자 승인과 재작업으로 이어지는 검토 가능한 업무 흐름을 구현했습니다. 후보 코드와 판단 근거, 기업 활동 원문, 검수 결과와 변경 이력을 함께 제공합니다.
+
+- [nice-industry-code-ai-agent-demo](https://github.com/kjj403/nice-industry-code-ai-agent-demo)
+
 ### Lending portfolio optimization
 
 대출 데이터의 비대칭 손실을 반영한 비용 민감 학습과 위험 조정 수익률 평가를 결합했습니다.

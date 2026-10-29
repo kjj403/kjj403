@@ -1,56 +1,27 @@
 # Jinju Kim
 
-기업·금융 데이터를 다루는 AI 서비스를 만들고, 사람이 결과의 근거를 확인할 수 있는 업무 흐름으로 연결합니다.
+금융과 기업 데이터를 다루는 AI 서비스를 개발하고, 사용자가 결과와 근거를 확인할 수 있도록 연결합니다.
 
-- 통계학 석사 · 빅데이터·금융 AI 전문가 과정(1,040시간) 수료
-- 관심 분야: 생성형 AI 서비스, RAG, 데이터 모델링·품질 관리, 설명 가능한 머신러닝
+- 통계학 석사
+- 빅데이터 핀테크 AI 고급 전문가 과정 1,040시간 수료
+- 주요 경험: Python, SQL, PostgreSQL, AWS 환경 구축, 화면과 DB 연동, 문서 파싱, LLM 판정 프롬프트, 모델 비교와 검증
 
-## Featured Projects
+## 프로젝트
 
-### 1. 산업코드 분류 AI Agent — 검수 가능한 AI 업무 흐름
+| 프로젝트 | 확인할 내용 | 범위 |
+|---|---|---|
+| [산업코드 검수 워크플로 데모](https://github.com/kjj403/nice-industry-code-ai-agent-demo) | 작업 배정, 후보 검토, 승인과 재작업, 변경 이력 | 합성 데이터로 별도 구현한 공개 데모. 외부 LLM 호출 없음 |
+| [공시 형식 문서 검토 데모](https://github.com/kjj403/public-filing-industry-agent-demo) | 문장 기반 후보와 근거, 사람 검토, JSON 내보내기 | 합성 문서와 키워드 규칙 기반 데모. 외부 LLM 호출 없음 |
+| [Pick My Lunch](https://github.com/kjj403/Pick-My-Lunch) | React 화면, 서버 함수의 LLM API 호출, 입력과 예외 처리 | AI 코딩 도구를 활용한 개인 과제 |
+| [Lending Club 대출 분석](https://github.com/kjj403/Lending-Club-Project) | 정보 생성 시점 검토, 비용 민감 학습, 동일 승인율 비교 | 6인 팀 프로젝트. 본인 담당은 전처리와 EDA, Boosting 모델군, 최종 발표 |
 
-기업의 업태·종목 정보로 산업코드 후보를 제시하고, 관리자 배정 → 작업자 AI 후보 검토 → 검수자 승인·재작업으로 이어지는 흐름을 구현한 데모입니다(합성 데이터). 후보 코드와 판단 근거, 검수 결과와 변경 이력이 함께 남습니다.
+NICE평가정보 기업연계 프로젝트에서는 서버와 DB 구축, 화면과 DB 연동, 후보 검증 필터, LLM 판정 프롬프트, 운영 메모리 문제 개선을 맡았습니다. 위 공개 데모는 비공개 기업 프로젝트의 코드와 데이터를 복제한 저장소가 아닙니다.
 
-- 원 프로젝트에서 맡은 일: 서버·DB 구축, 화면–DB 연동, 공식 분류 기준에 따른 후보 검증 필터, LLM 판정 프롬프트 설계
-- Repo: [nice-industry-code-ai-agent-demo](https://github.com/kjj403/nice-industry-code-ai-agent-demo)
+## 연구
 
-### 2. 공시 문서 산업코드 Agent — 설명 가능한 문서 AI
+- 제1저자: 공분산 회귀모형의 알고리즘 구현과 시뮬레이션, KOSPI와 미국 공항 네트워크 분석, 원고 집필. [CSAM 게재 논문](https://doi.org/10.29220/CSAM.2025.32.5.655)
+- 제3저자: 환경위험 인식 연구의 분석과 담당 분석 부분 집필. [Humanities and Social Sciences Communications 게재 논문](https://doi.org/10.1057/s41599-026-08463-7)
 
-합성 공시 문서에서 사업 활동을 분리하고, 복수 산업코드 후보와 문장 근거를 제시한 뒤 사람의 검토 결과를 구조화합니다.
+## 공개 범위
 
-- Repo: [public-filing-industry-agent-demo](https://github.com/kjj403/public-filing-industry-agent-demo)
-
-### 3. 감사보고서 RAG — 근거 기반 질의응답 (팀 프로젝트)
-
-11개 연도 감사보고서를 구조화해 수치 질문은 SQL로, 설명형 질문은 RAG로 처리했습니다.
-
-- 맡은 일: 문서 파싱(표의 행·열, 단위, 연도 보존), 근거 밖 내용을 만들지 않도록 하는 프롬프트 규칙 설계
-- Repo: [samsung-audit-rag](https://github.com/njungyeon/samsung-audit-rag)
-
-### 4. 다국어 RAG 키오스크 (팀 프로젝트)
-
-자연어로 주문하는 AI 키오스크를 한국어·영어·중국어·일본어로 제공했습니다.
-
-- 맡은 일: Streamlit 화면 구현, 내부 검색·추론 언어를 고정하고 마지막 단계에서 선택 언어로 응답하도록 흐름 수정
-- Repo: [cafe_kiosk_prj](https://github.com/SarahCho0/cafe_kiosk_prj)
-
-### 5. 대출 부도 예측과 위험조정수익 평가
-
-고액 부도의 비대칭 손실을 반영한 비용 민감 학습, 승인율을 통제한 비교, 샤프지수 기반 평가를 결합했습니다. 부스팅 모델군을 맡았습니다.
-
-- Repo: [Lending-Club-Project](https://github.com/kjj403/Lending-Club-Project)
-
-### 6. 고객 이탈 분석
-
-공개 대체 데이터로 고객 세분화, 이탈 예측, SHAP 기반 설명을 구성했습니다.
-
-- Repo: [Insurance-Churn-Analysis](https://github.com/kjj403/Insurance-Churn-Analysis)
-
-## Research
-
-- First author — covariance regression for US airport network and KOSPI volatility: [CSAM 32(5), 655–672 (2025)](https://doi.org/10.29220/CSAM.2025.32.5.655)
-- Co-author — government and information trust in environmental risk perception: [Humanities and Social Sciences Communications (2026)](https://doi.org/10.1057/s41599-026-08463-7)
-
-## Tools
-
-Python · SQL · R · PostgreSQL · AWS (EC2, RDS, S3) · Streamlit · LLM/RAG · Machine Learning · Git/DVC
+기업 제공 원자료, 내부 화면, 접속정보와 내부 문서는 공개하지 않습니다. 팀 프로젝트는 개인 담당 범위와 팀 결과를 구분해 설명합니다.
